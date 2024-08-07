@@ -1,112 +1,18 @@
 # Token Stacking Dapp
 
-Building a Token Stacking Dapp from Scratch | Become a Defi Developer by Building Stacking Dapp
+This is a contract that gives rewards to anyone who stakes their token after a certain time.
 
-Building Your Own Token Stacking DApp: Become a DeFi Developer. Step into the world of decentralized finance (DeFi) by embarking on a journey to build your very own Token Stacking DApp from scratch. This comprehensive tutorial will guide you through the process of creating a decentralized application (DApp) that allows users to stake tokens and earn rewards, all while gaining valuable insights into the DeFi ecosystem
+Technologies: HardHat • Solidity • Github •
 
-## Project Overview
+The contract has
+Staking and Rewards: Users can stake tokens, earn rewards over time, and claim these rewards. The rewards are calculated based on the Annual Percentage Yield (APY) rate and the duration of the stake.
 
-![alt text](https://www.daulathussain.com/wp-content/uploads/2023/07/token-sgtacking-dapp-project.jpg)
+Initialization and Configuration: The contract is initialized with parameters like the token address, APY rate, stake amount limits, and stake period. Only the owner can update these settings.
 
-## Instruction
+Early Unstake Fee: An early unstake fee is applied if users unstake before the staking period ends. This fee is a percentage of the unstaked amount.
 
-Kindly follow the following Instructions to run the project in your system and install the necessary requirements
+Security and Reentrancy Protection: The contract includes reentrancy guards to prevent reentrancy attacks and ensure secure fund handling.
 
+Pause and Resume Staking: The owner can pause and resume staking activities, providing control over the staking process during maintenance or updates.
 
-- [Final Source Code](https://www.theblockchaincoders.com/sourceCode/build-token-stacking-dapp-from-scratch)
-
-#### Setup Video
-- [Final Code Setup video](https://youtu.be/LacIYJQ-VWE?si=gOyUFwMItV9GYuAK)
-
-```https://code.visualstudio.com/download
-  WATCH: Setup & Demo Of Project
-```
-
-#### Install Vs Code Editor
-
-```https://code.visualstudio.com/download
-  GET: VsCode Editor
-```
-
-#### NodeJs & NPM Version
-
-```https://nodejs.org/en/download
-  NodeJs: v18.12.1
-  NPM: 8.19.2
-```
-
-#### Clone Starter File
-
-```https://github.com/daulathussain/Airdrop-Crypto-Starter-File
-  GET: Project Starter File Download
-```
-
-
-All you need to follow the complete project and follow the instructions which are explained in the tutorial by Daulat
-
-## Final Code Instruction
-
-If you download the final source code then you can follow the following instructions to run the Dapp successfully
-
-#### Setup Video
-
-```https://code.visualstudio.com/download
-  WATCH: Setup & Demo Of Project
-```
-
-#### Final Source Code
-
-```https://www.theblockchaincoders.com/SourceCode
-  Download the Final Source Code
-```
-
-#### Install Vs Code Editor
-
-```https://code.visualstudio.com/download
-  GET: VsCode Editor
-```
-
-#### NodeJs & NPM Version
-
-```https://nodejs.org/en/download
-  NodeJs: v18.12.1
-  NPM: 8.19.2
-```
-
-
-#### Test Faucets
-
-Alchemy will provide you with some free test faucets which you can transfer to your wallet address for deploying the contract
-
-```https://www.alchemy.com/faucets
-  Get: Free Test Faucets
-```
-
-#### RemixID
-
-We are using RemixID for deploying the contract and generation of the ABI in the project, but you can use any other tools like Hardhat, etc.
-
-```https://remix-project.org
-  OPEN: RemixID
-```
-
-#### Polygon Mumbai
-
-```https://mumbai.polygonscan.com/
-  OPEN: Polygon Mumbai
-```
-
-## Important Links
-
-- [Get Pro Blockchain Developer Course](https://www.theblockchaincoders.com/pro-nft-marketplace)
-- [Support Creator](https://bit.ly/Support-Creator)
-- [All Projects Source Code](https://www.theblockchaincoders.com/SourceCode)
-
-
-## Authors
-
-- [@theblockchaincoders.com](https://www.theblockchaincoders.com/)
-- [@consultancy](https://www.theblockchaincoders.com/consultancy)
-- [@youtube](https://www.youtube.com/@daulathussain)
-
-
+Event Logging and User Tracking: Events like staking, unstaking, reward claiming, and early unstake fees are logged. The contract tracks user details, including stake amounts, reward amounts, and staking times.
