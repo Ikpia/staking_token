@@ -1,7 +1,7 @@
 // SPDX-License-Identifier: UNLICENSED
 pragma solidity ^0.8.9;
 
-contract TheBlockchainCoders {
+contract Token {
     string public name = "@stakingtokens";
     string public symbol = "ST";
     string public standard = "stakingtoken.v.0.1";
